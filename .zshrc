@@ -101,5 +101,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias rtest="bin/rails test"
 alias ghserver="rm /tmp/overmind.sock || true && $(pwd)/script/server --debug"
+alias ghconsole="$(pwd)/bin/console -p"
 DISABLE_AUTO_UPDATE=true
 DISABLE_UPDATE_PROMPT=true
