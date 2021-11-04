@@ -102,8 +102,8 @@ source $ZSH/oh-my-zsh.sh
 alias rtest="bin/rails test"
 alias ghserver="rm /tmp/overmind.sock || true && $(pwd)/script/server --debug"
 alias ghconsole="$(pwd)/bin/console -p"
-fpath=(/usr/local/share/zsh-completions $fpath)
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fpath=(/usr/share/zsh-completions $fpath)
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 DISABLE_AUTO_UPDATE=false
 DISABLE_UPDATE_PROMPT=true
