@@ -3,6 +3,7 @@
 set -xe
 
 cp .gitconfig ~
+cp .zshrc ~
 
 export DEBIAN_FRONTEND=noninteractive
 
