@@ -1,13 +1,11 @@
 #!/bin/zsh
 
-set -xe
+set -e
 
-cp .gitconfig ~
-cp .zshrc ~
+cp .gitconfig ~/.gitconfig
+cp .zshrc ~/.zshrc
 
 export DEBIAN_FRONTEND=noninteractive
 
 sudo apt-get update
 sudo apt-get -y install zsh-autosuggestions zsh-syntax-highlighting jq ripgrep fzf
-
-git config --global commit.gpgsign true
