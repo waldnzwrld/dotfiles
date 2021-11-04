@@ -1,0 +1,44 @@
+[alias]
+  co = checkout
+  st = status
+  ci = commit
+  br = branch
+  df = diff
+  lg = log -p
+  pr = pull --rebase
+  unstage = reset HEAD
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  rmb = "!f() { git branch --merged | grep -v "master" | while read i; do git branch -d $i; done; }; f"
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[fetch]
+  prune = true
+[pull]
+  ff = only
+  rebase = false
+[push]
+  default = current
+[github]
+  user = waldnzwrld
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  required = true
+  process = git-lfs filter-process
+[url "git@github.com:"]
+  insteadOf = https://github.com/
