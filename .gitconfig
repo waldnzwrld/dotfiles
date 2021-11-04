@@ -1,3 +1,6 @@
+[user]
+  name = Walden Bodtker
+  email = waldnzwrld@github.com
 [alias]
   co = checkout
   st = status
