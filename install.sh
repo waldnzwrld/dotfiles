@@ -9,5 +9,3 @@ sudo apt-get -y install zsh-autosuggestions zsh-syntax-highlighting jq ripgrep f
 
 cp .zshrc $HOME/.zshrc
 cat .gitconfig >> $HOME/.gitconfig
-
-git config --global commit.gpgsign true
