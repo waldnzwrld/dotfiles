@@ -100,7 +100,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias rtest="bin/rails test"
-alias ghserver="rm /tmp/overmind.sock || true && $(ped)/bin/toggle-feature-flag enable enforce_emu_cap_policy && GH_SSL=1 $(pwd)/script/server --debug"
+alias set_emus="$(pwd)/bin/toggle-feature-flag enable enforce_emu_cap_policy"
+alias ghserver="rm /tmp/overmind.sock || true && GH_SSL=1 $(pwd)/script/server --debug"
 alias ghconsole="$(pwd)/bin/console -p"
 fpath=(/usr/share/zsh-completions $fpath)
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
