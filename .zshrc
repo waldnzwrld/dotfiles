@@ -103,6 +103,7 @@ alias rtest="$(pwd)/bin/rails test"
 alias set_emus="$(pwd)/bin/toggle-feature-flag enable enforce_emu_cap_policy"
 alias ghserver="rm /tmp/overmind.sock || true && GH_SSL=1 $(pwd)/script/server --debug"
 alias ghconsole="$(pwd)/bin/console -p"
+alias ghdriftwood="HYDRO_KAFKA_BROKERS='127.0.0.1:5051' DRIFTWOOD_HOST='http://127.0.0.1:5052' DRIFTWOOD_HMAC_KEY='deadbeef' ghserver"
 fpath=(/usr/share/zsh-completions $fpath)
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
